@@ -1,0 +1,11 @@
+{
+  "name": "polymer-builder",
+  "version": "0.0.0",
+  "description": "Polymer builder on desktop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "villa.gao <jky239@gmail.com>",
+  "license": "MIT"
+}
