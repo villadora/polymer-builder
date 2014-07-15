@@ -1,3 +1,5 @@
 node_modules/
 *.zip
 atom-shell/
+bower_components/
+components/
