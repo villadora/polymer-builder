@@ -2,8 +2,6 @@ var app = require('app');  // Module to control application life.
 var BrowserWindow = require('browser-window');  // Module to create native browser window.
 
 
-console.log(require('http'));
-
 // Report crashes to our server.
 require('crash-reporter').start();
 
@@ -17,9 +15,12 @@ app.on('window-all-closed', function() {
     app.quit();
 });
 
+
+
 // This method will be called when atom-shell has done everything
 // initialization and ready for creating browser windows.
 app.on('ready', function() {
+  require('./server')('.', 8001);
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 800, height: 600, 
@@ -37,3 +38,4 @@ app.on('ready', function() {
     mainWindow = null;
   });
 });
+
