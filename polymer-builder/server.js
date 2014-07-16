@@ -1,9 +1,11 @@
+"use strict";
+
 var http = require('http');
 var finalhandler = require('finalhandler');
 var serveStatic = require('serve-static');
 
 module.exports = function(path, port) {
-  // Serve up public/ftp folder
+  console.log(path);
   var serve = serveStatic(path);
 
   // Create server

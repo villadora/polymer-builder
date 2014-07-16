@@ -20,7 +20,8 @@ app.on('window-all-closed', function() {
 // This method will be called when atom-shell has done everything
 // initialization and ready for creating browser windows.
 app.on('ready', function() {
-  require('./server')('.', 8001);
+  require('./server')(__dirname, 8001);
+
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 800, height: 600, 
@@ -28,7 +29,7 @@ app.on('ready', function() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadUrl('file://' + __dirname + '/index.html');
+  mainWindow.loadUrl('http://localhost:8001/index.html');
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
