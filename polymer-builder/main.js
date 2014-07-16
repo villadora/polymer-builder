@@ -29,7 +29,7 @@ app.on('ready', function() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadUrl('http://localhost:8001/index.html');
+  mainWindow.loadUrl('http://localhost:8001/');
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
