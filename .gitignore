@@ -3,3 +3,4 @@ node_modules/
 atom-shell/
 bower_components/
 components/
+dist/
